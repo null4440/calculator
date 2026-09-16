@@ -17,7 +17,7 @@ table {
     text-align: center;
 
     /*余白調整*/
-    padding: 8px;
+    padding: 9px;
 
     /*背景色*/
     background-color:aquamarine;
@@ -48,38 +48,14 @@ input {
     text-align: right;
 
     /*見た目の調整*/
-    background: #ffffff;
+    background: #ebe9e9;
     border-top: solid #dcdcdca4 5px;
     border-right: solid #dcdcdca4 6px;
     border-left: solid #b6b6b6 6px;
     border-radius: 10px;
 }
 
-/*演算子の背景色を上書き設定*/
-.operator {
-    background-color: #87cefa;
-}
 
-.equal {
-    background-color: #b6b6b6;
-}
 
-input:hover {
-    background: #747474;
-}
 
-.display:hover {
-    background: #ffffff;
-}
-
-.operator:hover {
-    background: #339cdd;
-}
-
-input:active {
-    background: #5a5a5a;
-}
-.operator:active {
-    background: #2c80b4;
-}
 
