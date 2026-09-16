@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title>電卓</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/calculator.js"></script>
+</head>
+
+<body>
+
+    <div class="calculator">
+    <form name="calc">
+        <input type="text" class="display" name="display" value="0">
+    </form>
+
+    <!--電卓のボタン-->
+    <table>
+    <!--１列目-->
+    <tr>
+        <td><input type="button" value="⇚" onclick="get_calc(this)"></td>
+        <td><input type="button" value="AC" onclick="get_calc(this)"></td>
+        <td><input type="button" value="%" onclick="get_calc(this)"></td>
+        <td><input type="button" value="÷" onclick="get_calc(this)"></td>
+    </tr>
+
+    <!--２列目-->
+    <tr>
+        <td><input type="button" value="7" onclick="get_calc(this)"></td>
+        <td><input type="button" value="8" onclick="get_calc(this)"></td>
+        <td><input type="button" value="9" onclick="get_calc(this)"></td>
+        <td><input type="button" value="*" onclick="get_calc(this)"></td>
+    </tr>
+
+    <!--３列目-->
+    <tr>
+        <td><input type="button" value="4" onclick="get_calc(this)"></td>
+        <td><input type="button" value="5" onclick="get_calc(this)"></td>
+        <td><input type="button" value="6" onclick="get_calc(this)"></td>
+        <td><input type="button" value="-" onclick="get_calc(this)"></td>
+    </tr>
+
+    <!--４列目-->
+    <tr>
+        <td><input type="button" value="1" onclick="get_calc(this)"></td>
+        <td><input type="button" value="2" onclick="get_calc(this)"></td>
+        <td><input type="button" value="3" onclick="get_calc(this)"></td>
+        <td><input type="button" value="+" onclick="get_calc(this)"></td>
+    </tr>
+
+    <!--５列目-->
+    <tr>
+        <td><input type="button" value="+/-" onclick="get_calc(this)"></td>
+        <td><input type="button" value="0" onclick="get_calc(this)"></td>
+        <td><input type="button" value="." onclick="get_calc(this)"></td>
+        <td><input type="button" value="=" onclick="get_calc(this)"></td>
+    </tr>
+    </table>
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+.calculator {
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    margin-left: 800px;
+    margin-top: 200px;
+}
+
+table {
+    /*枠の色*/
+    border: solid 4px #dcdcdca4;
+    border-right: solid 4px #dcdcdca4;
+    border-bottom: solid 4px #dcdcdca4;
+    border-radius: 10px;
+
+    /*中央寄せ*/
+    text-align: center;
+
+    /*余白調整*/
+    padding: 8px;
+
+    /*背景色*/
+    background-color:aquamarine;
+}
+
+input {
+    /*ボタンサイズ*/
+    width: 70px;
+    height: 70px;
+
+    /*文字サイズ*/
+    font-size: x-large;
+
+    /*ボタンの色*/
+    background-color: #dcdcdca4;
+
+    border: none;
+    border-radius: 20px;
+
+    outline: none;
+}
+
+/*ディスプレイ調整*/
+.display {
+    width: 308px;
+
+    /*文字を右詰め*/
+    text-align: right;
+
+    /*見た目の調整*/
+    background: #ffffff;
+    border-top: solid #dcdcdca4 5px;
+    border-right: solid #dcdcdca4 6px;
+    border-left: solid #b6b6b6 6px;
+    border-radius: 10px;
+}
+
+/*演算子の背景色を上書き設定*/
+.operator {
+    background-color: #87cefa;
+}
+
+.equal {
+    background-color: #b6b6b6;
+}
+
+input:hover {
+    background: #747474;
+}
+
+.display:hover {
+    background: #ffffff;
+}
+
+.operator:hover {
+    background: #339cdd;
+}
+
+input:active {
+    background: #5a5a5a;
+}
+.operator:active {
+    background: #2c80b4;
+}
+
