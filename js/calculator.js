@@ -6,7 +6,6 @@ function get_calc(btn) {
     // 押されたボタンの値
     const value = btn.value;
 
-
     // 「AC」が押された場合
     if (value === "AC") {
 
