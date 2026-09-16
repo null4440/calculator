@@ -39,6 +39,10 @@ function get_calc(btn) {
         // 入力してある数字の＋－を反転させる
         display.value = parseFloat(display.value) * -1;
 
+    //.
+    } else if (value === ".") {
+        display.value = (display.value) + ".";
+
     } else {
 
         // 最初に0が表示されている場合
