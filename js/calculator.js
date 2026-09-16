@@ -6,44 +6,39 @@ function get_calc(btn) {
     // 押されたボタンの値
     const value = btn.value;
 
-    // 「AC」が押された場合
+    // AC
     if (value === "AC") {
 
         display.value = "0";
 
-    // 「⇚」が押された場合
+    // ⇚
     } else if (value === "⇚") {
 
-        // 最後の1文字を削除
+        // 1文字削除
         display.value = display.value.slice(0, -1);
 
-        // 全部消えたら0に戻す
+        // 全部消えたら0にする
         if (display.value === "") {
             display.value = "0";
         }
 
-    // 「=」が押された場合
+    // =
     } else if (value === "=") {
 
-        try {
-            display.value = eval(display.value);
-        } catch (error) {
-            display.value = "Error";
-        }
+        display.value = eval(display.value);
 
-    // 「%」が押された場合
+    // %
     } else if (value === "%") {
 
         // 現在の数字を100で割る
         display.value = parseFloat(display.value) / 100;
 
-    // 「+/-」が押された場合
+    // +/-
     } else if (value === "+/-") {
 
-        // 数値を反転
+        // 入力してある数字の＋－を反転させる
         display.value = parseFloat(display.value) * -1;
 
-    // それ以外（数字や演算子）
     } else {
 
         // 最初に0が表示されている場合
