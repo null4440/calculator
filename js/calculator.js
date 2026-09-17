@@ -31,13 +31,13 @@ function get_calc(btn) {
     } else if (value === "%") {
 
         // 現在の数字を100で割る
-        display.value = parseFloat(display.value) / 100;
+        display.value = (display.value) / 100;
 
     // +/-
     } else if (value === "+/-") {
 
         // 入力してある数字の＋－を反転させる
-        display.value = parseFloat(display.value) * -1;
+        display.value = (display.value) * -1;
 
     //.
     } else if (value === ".") {
